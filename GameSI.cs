@@ -4,12 +4,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Stellar_Invaders
 {
-    public class Game1 : Game
+    public class GameSI : Game
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        public Game1()
+        public GameSI()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
