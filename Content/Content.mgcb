@@ -13,6 +13,13 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin arialHeading.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:arialHeading.spritefont
+
 #begin Assets/Background/Blue_Nebula_1.png
 /importer:TextureImporter
 /processor:TextureProcessor
