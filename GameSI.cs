@@ -4,25 +4,25 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 using System.Collections.Generic;
 using System;
+using System.IO;
 
 namespace Stellar_Invaders
 {
     public class GameSI : Game
     {
+        //Sciezka do plikow
+        public string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Content\\bin\\Assets";
+        // Przygotowanie obiektow 
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        private List<Texture2D> _textures = new List<Texture2D>();
-        private Texture2D Starfield_01;
-        private Texture2D Blue_Nebula_03;
-        private Texture2D NautolanShipScoutBase;
-        private Texture2D NautolanShipScout;
-        private Texture2D NautolanShipScoutEngineEffect;
-        private Texture2D PickupIconEnginesSuperchargedEngine;
-        private Texture2D PickupIconEnginesBurstEngine;
-        private Texture2D PickupIconEnginesBigPulseEngine;
-        private Texture2D PickupIconEnginesBaseEngine;
-        private Texture2D MainShipBaseFullhealth;
-        private Texture2D MainShipBaseSmallhealth;
+        // Lista zawierajaca textury tła (background)
+        private List<Texture2D> texBgs = new List<Texture2D>();
+        // Obiekty zawierajacy tekstury
+        private Texture2D texNautolanShipScout;
+        private Texture2D texMainShip;
+        // Obiekt zawierajacy wystrzal laseru
+        public SoundEffect laser_shot;
+
 
 
 
@@ -45,6 +45,10 @@ namespace Stellar_Invaders
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+
+            //Wczytujemy tekstury do obiektow
+            texMainShip = Content.Load<Texture2D>(path + "\\MainShip\\MainShipBaseSlightdamage");
+            texNautolanShipScout = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipBomberBase");
         }
 
         protected override void Update(GameTime gameTime)

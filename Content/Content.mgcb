@@ -37,6 +37,18 @@
 /processorParam:TextureFormat=Color
 /build:Assets/Background/Blue_Nebula_2.png
 
+#begin Assets/Background/CelestialObjects.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Background/CelestialObjects.png
+
 #begin Assets/Background/Green_Nebula_1.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -109,7 +121,7 @@
 /processorParam:TextureFormat=Color
 /build:Assets/Background/Starfield_2.png
 
-#begin Assets/CelestialObjects.png
+#begin Assets/Enemies/NautolanShipBattlecruiser.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -119,9 +131,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/CelestialObjects.png
+/build:Assets/Enemies/NautolanShipBattlecruiser.png
 
-#begin Assets/Designs - Base/PNGs/NautolanShipBattlecruiserBase.png
+#begin Assets/Enemies/NautolanShipBattlecruiserBase.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -131,9 +143,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Designs - Base/PNGs/NautolanShipBattlecruiserBase.png
+/build:Assets/Enemies/NautolanShipBattlecruiserBase.png
 
-#begin Assets/Designs - Base/PNGs/NautolanShipBomberBase.png
+#begin Assets/Enemies/NautolanShipBattlecruiserEngineEffect.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -143,9 +155,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Designs - Base/PNGs/NautolanShipBomberBase.png
+/build:Assets/Enemies/NautolanShipBattlecruiserEngineEffect.png
 
-#begin Assets/Designs - Base/PNGs/NautolanShipDreadnoughtBase.png
+#begin Assets/Enemies/NautolanShipBomber.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -155,9 +167,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Designs - Base/PNGs/NautolanShipDreadnoughtBase.png
+/build:Assets/Enemies/NautolanShipBomber.png
 
-#begin Assets/Designs - Base/PNGs/NautolanShipFighterBase.png
+#begin Assets/Enemies/NautolanShipBomberBase.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -167,9 +179,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Designs - Base/PNGs/NautolanShipFighterBase.png
+/build:Assets/Enemies/NautolanShipBomberBase.png
 
-#begin Assets/Designs - Base/PNGs/NautolanShipFrigateBase.png
+#begin Assets/Enemies/NautolanShipBomberEngineEffect.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -179,9 +191,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Designs - Base/PNGs/NautolanShipFrigateBase.png
+/build:Assets/Enemies/NautolanShipBomberEngineEffect.png
 
-#begin Assets/Designs - Base/PNGs/NautolanShipSupportBase.png
+#begin Assets/Enemies/NautolanShipBomberShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -191,9 +203,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Designs - Base/PNGs/NautolanShipSupportBase.png
+/build:Assets/Enemies/NautolanShipBomberShield.png
 
-#begin Assets/Designs - Base/PNGs/NautolanShipTorpedoShip.png
+#begin Assets/Enemies/NautolanShipDreadnought.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -203,9 +215,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Designs - Base/PNGs/NautolanShipTorpedoShip.png
+/build:Assets/Enemies/NautolanShipDreadnought.png
 
-#begin Assets/Destruction/PNGs/NautolanShipBattlecruiser.png
+#begin Assets/Enemies/NautolanShipDreadnoughtBase.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -215,9 +227,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Destruction/PNGs/NautolanShipBattlecruiser.png
+/build:Assets/Enemies/NautolanShipDreadnoughtBase.png
 
-#begin Assets/Destruction/PNGs/NautolanShipBomber.png
+#begin Assets/Enemies/NautolanShipDreadnoughtEngineEffect.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -227,9 +239,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Destruction/PNGs/NautolanShipBomber.png
+/build:Assets/Enemies/NautolanShipDreadnoughtEngineEffect.png
 
-#begin Assets/Destruction/PNGs/NautolanShipDreadnought.png
+#begin Assets/Enemies/NautolanShipDreadnoughtShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -239,9 +251,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Destruction/PNGs/NautolanShipDreadnought.png
+/build:Assets/Enemies/NautolanShipDreadnoughtShield.png
 
-#begin Assets/Destruction/PNGs/NautolanShipFighter.png
+#begin Assets/Enemies/NautolanShipFighter.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -251,9 +263,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Destruction/PNGs/NautolanShipFighter.png
+/build:Assets/Enemies/NautolanShipFighter.png
 
-#begin Assets/Destruction/PNGs/NautolanShipFrigate.png
+#begin Assets/Enemies/NautolanShipFighterBase.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -263,9 +275,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Destruction/PNGs/NautolanShipFrigate.png
+/build:Assets/Enemies/NautolanShipFighterBase.png
 
-#begin Assets/Destruction/PNGs/NautolanShipSupport.png
+#begin Assets/Enemies/NautolanShipFighterEngineEffect.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -275,9 +287,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Destruction/PNGs/NautolanShipSupport.png
+/build:Assets/Enemies/NautolanShipFighterEngineEffect.png
 
-#begin Assets/Destruction/PNGs/NautolanShipTorpedoShip.png
+#begin Assets/Enemies/NautolanShipFighterShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -287,9 +299,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Destruction/PNGs/NautolanShipTorpedoShip.png
+/build:Assets/Enemies/NautolanShipFighterShield.png
 
-#begin Assets/Engine Effects/PNGs/NautolanShipBattlecruiserEngineEffect.png
+#begin Assets/Enemies/NautolanShipFrigate.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -299,9 +311,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engine Effects/PNGs/NautolanShipBattlecruiserEngineEffect.png
+/build:Assets/Enemies/NautolanShipFrigate.png
 
-#begin Assets/Engine Effects/PNGs/NautolanShipBomberEngineEffect.png
+#begin Assets/Enemies/NautolanShipFrigateBase.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -311,9 +323,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engine Effects/PNGs/NautolanShipBomberEngineEffect.png
+/build:Assets/Enemies/NautolanShipFrigateBase.png
 
-#begin Assets/Engine Effects/PNGs/NautolanShipDreadnoughtEngineEffect.png
+#begin Assets/Enemies/NautolanShipFrigateEngineEffect.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -323,9 +335,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engine Effects/PNGs/NautolanShipDreadnoughtEngineEffect.png
+/build:Assets/Enemies/NautolanShipFrigateEngineEffect.png
 
-#begin Assets/Engine Effects/PNGs/NautolanShipFighterEngineEffect.png
+#begin Assets/Enemies/NautolanShipFrigateShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -335,9 +347,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engine Effects/PNGs/NautolanShipFighterEngineEffect.png
+/build:Assets/Enemies/NautolanShipFrigateShield.png
 
-#begin Assets/Engine Effects/PNGs/NautolanShipFrigateEngineEffect.png
+#begin Assets/Enemies/NautolanShipScoutShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -347,9 +359,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engine Effects/PNGs/NautolanShipFrigateEngineEffect.png
+/build:Assets/Enemies/NautolanShipScoutShield.png
 
-#begin Assets/Engine Effects/PNGs/NautolanShipSupportEngineEffect.png
+#begin Assets/Enemies/NautolanShipSupport.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -359,9 +371,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engine Effects/PNGs/NautolanShipSupportEngineEffect.png
+/build:Assets/Enemies/NautolanShipSupport.png
 
-#begin Assets/Engine Effects/PNGs/NautolanShipTorpedoShipEngineEffect.png
+#begin Assets/Enemies/NautolanShipSupportBase.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -371,9 +383,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engine Effects/PNGs/NautolanShipTorpedoShipEngineEffect.png
+/build:Assets/Enemies/NautolanShipSupportBase.png
 
-#begin Assets/Engines/PNGs/PickupIconEnginesBaseEngine.png
+#begin Assets/Enemies/NautolanShipSupportEngineEffect.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -383,9 +395,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engines/PNGs/PickupIconEnginesBaseEngine.png
+/build:Assets/Enemies/NautolanShipSupportEngineEffect.png
 
-#begin Assets/Engines/PNGs/PickupIconEnginesBigPulseEngine.png
+#begin Assets/Enemies/NautolanShipTorpedo.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -395,9 +407,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engines/PNGs/PickupIconEnginesBigPulseEngine.png
+/build:Assets/Enemies/NautolanShipTorpedo.png
 
-#begin Assets/Engines/PNGs/PickupIconEnginesBurstEngine.png
+#begin Assets/Enemies/NautolanShipTorpedoBase.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -407,9 +419,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engines/PNGs/PickupIconEnginesBurstEngine.png
+/build:Assets/Enemies/NautolanShipTorpedoBase.png
 
-#begin Assets/Engines/PNGs/PickupIconEnginesSuperchargedEngine.png
+#begin Assets/Enemies/NautolanShipTorpedoShipEngineEffect.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -419,9 +431,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Engines/PNGs/PickupIconEnginesSuperchargedEngine.png
+/build:Assets/Enemies/NautolanShipTorpedoShipEngineEffect.png
 
-#begin Assets/Main ship weapons/PNGs/MainshipweaponProjectileAutocannonbullet.png
+#begin Assets/Enemies/NautolanShipTorpedoShipShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -431,9 +443,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main ship weapons/PNGs/MainshipweaponProjectileAutocannonbullet.png
+/build:Assets/Enemies/NautolanShipTorpedoShipShield.png
 
-#begin Assets/Main ship weapons/PNGs/MainshipweaponProjectileBigSpaceGun.png
+#begin Assets/Enemies/NautolaShipBattlnecruiserShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -443,9 +455,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main ship weapons/PNGs/MainshipweaponProjectileBigSpaceGun.png
+/build:Assets/Enemies/NautolaShipBattlnecruiserShield.png
 
-#begin Assets/Main ship weapons/PNGs/MainshipweaponProjectileRocket.png
+#begin Assets/MainShip/MainShipBaseDamaged.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -455,9 +467,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main ship weapons/PNGs/MainshipweaponProjectileRocket.png
+/build:Assets/MainShip/MainShipBaseDamaged.png
 
-#begin Assets/Main ship weapons/PNGs/MainshipweaponProjectileZapper.png
+#begin Assets/MainShip/MainShipBaseSlightdamage.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -467,9 +479,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main ship weapons/PNGs/MainshipweaponProjectileZapper.png
+/build:Assets/MainShip/MainShipBaseSlightdamage.png
 
-#begin Assets/Main Ship/Main Ship - Bases/PNGs/MainShipBaseDamaged.png
+#begin Assets/MainShip/MainShipBaseVerydamaged.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -479,9 +491,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Bases/PNGs/MainShipBaseDamaged.png
+/build:Assets/MainShip/MainShipBaseVerydamaged.png
 
-#begin Assets/Main Ship/Main Ship - Bases/PNGs/MainShipBaseSlightdamage.png
+#begin Assets/MainShip/MainShipEnginesBaseEngine.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -491,9 +503,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Bases/PNGs/MainShipBaseSlightdamage.png
+/build:Assets/MainShip/MainShipEnginesBaseEngine.png
 
-#begin Assets/Main Ship/Main Ship - Bases/PNGs/MainShipBaseVerydamaged.png
+#begin Assets/MainShip/MainShipEnginesBaseEngineIdle.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -503,9 +515,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Bases/PNGs/MainShipBaseVerydamaged.png
+/build:Assets/MainShip/MainShipEnginesBaseEngineIdle.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBaseEngineIdle.png
+#begin Assets/MainShip/MainShipEnginesBaseEnginePowering.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -515,9 +527,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBaseEngineIdle.png
+/build:Assets/MainShip/MainShipEnginesBaseEnginePowering.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBaseEnginePowering.png
+#begin Assets/MainShip/MainShipEnginesBaseEngineSpritesheet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -527,9 +539,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBaseEnginePowering.png
+/build:Assets/MainShip/MainShipEnginesBaseEngineSpritesheet.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBaseEngineSpritesheet.png
+#begin Assets/MainShip/MainShipEnginesBigPulseEngine.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -539,9 +551,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBaseEngineSpritesheet.png
+/build:Assets/MainShip/MainShipEnginesBigPulseEngine.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBigPulseEngineIdle.png
+#begin Assets/MainShip/MainShipEnginesBigPulseEngineIdle.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -551,9 +563,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBigPulseEngineIdle.png
+/build:Assets/MainShip/MainShipEnginesBigPulseEngineIdle.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBigPulseEnginePowering.png
+#begin Assets/MainShip/MainShipEnginesBigPulseEnginePowering.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -563,9 +575,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBigPulseEnginePowering.png
+/build:Assets/MainShip/MainShipEnginesBigPulseEnginePowering.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBigPulseEngineSpritesheet.png
+#begin Assets/MainShip/MainShipEnginesBigPulseEngineSpritesheet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -575,9 +587,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBigPulseEngineSpritesheet.png
+/build:Assets/MainShip/MainShipEnginesBigPulseEngineSpritesheet.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBurstEngineIdle.png
+#begin Assets/MainShip/MainShipEnginesBurstEngine.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -587,9 +599,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBurstEngineIdle.png
+/build:Assets/MainShip/MainShipEnginesBurstEngine.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBurstEnginePowering.png
+#begin Assets/MainShip/MainShipEnginesBurstEngineIdle.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -599,9 +611,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBurstEnginePowering.png
+/build:Assets/MainShip/MainShipEnginesBurstEngineIdle.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBurstEngineSpritesheet.png
+#begin Assets/MainShip/MainShipEnginesBurstEnginePowering.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -611,9 +623,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesBurstEngineSpritesheet.png
+/build:Assets/MainShip/MainShipEnginesBurstEnginePowering.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesSuperchargedEngineIdle.png
+#begin Assets/MainShip/MainShipEnginesBurstEngineSpritesheet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -623,9 +635,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesSuperchargedEngineIdle.png
+/build:Assets/MainShip/MainShipEnginesBurstEngineSpritesheet.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesSuperchargedEnginePowering.png
+#begin Assets/MainShip/MainShipEnginesSuperchargedEngine.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -635,9 +647,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesSuperchargedEnginePowering.png
+/build:Assets/MainShip/MainShipEnginesSuperchargedEngine.png
 
-#begin Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesSuperchargedEngineSpritesheet.png
+#begin Assets/MainShip/MainShipEnginesSuperchargedEngineIdle.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -647,9 +659,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engine Effects/PNGs/MainShipEnginesSuperchargedEngineSpritesheet.png
+/build:Assets/MainShip/MainShipEnginesSuperchargedEngineIdle.png
 
-#begin Assets/Main Ship/Main Ship - Engines/PNGs/MainShipEnginesBaseEngine.png
+#begin Assets/MainShip/MainShipEnginesSuperchargedEnginePowering.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -659,9 +671,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engines/PNGs/MainShipEnginesBaseEngine.png
+/build:Assets/MainShip/MainShipEnginesSuperchargedEnginePowering.png
 
-#begin Assets/Main Ship/Main Ship - Engines/PNGs/MainShipEnginesBigPulseEngine.png
+#begin Assets/MainShip/MainShipEnginesSuperchargedEngineSpritesheet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -671,9 +683,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engines/PNGs/MainShipEnginesBigPulseEngine.png
+/build:Assets/MainShip/MainShipEnginesSuperchargedEngineSpritesheet.png
 
-#begin Assets/Main Ship/Main Ship - Engines/PNGs/MainShipEnginesBurstEngine.png
+#begin Assets/MainShip/MainShipShieldsFrontandSideShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -683,9 +695,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engines/PNGs/MainShipEnginesBurstEngine.png
+/build:Assets/MainShip/MainShipShieldsFrontandSideShield.png
 
-#begin Assets/Main Ship/Main Ship - Engines/PNGs/MainShipEnginesSuperchargedEngine.png
+#begin Assets/MainShip/MainShipShieldsFrontShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -695,9 +707,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Engines/PNGs/MainShipEnginesSuperchargedEngine.png
+/build:Assets/MainShip/MainShipShieldsFrontShield.png
 
-#begin Assets/Main Ship/Main Ship - Shields/PNGs/MainShipShieldsFrontandSideShield.png
+#begin Assets/MainShip/MainShipShieldsInvincibilityShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -707,9 +719,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Shields/PNGs/MainShipShieldsFrontandSideShield.png
+/build:Assets/MainShip/MainShipShieldsInvincibilityShield.png
 
-#begin Assets/Main Ship/Main Ship - Shields/PNGs/MainShipShieldsFrontShield.png
+#begin Assets/MainShip/MainShipShieldsRoundShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -719,9 +731,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Shields/PNGs/MainShipShieldsFrontShield.png
+/build:Assets/MainShip/MainShipShieldsRoundShield.png
 
-#begin Assets/Main Ship/Main Ship - Shields/PNGs/MainShipShieldsInvincibilityShield.png
+#begin Assets/MainShip/MainshipweaponProjectileAutocannonbullet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -731,9 +743,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Shields/PNGs/MainShipShieldsInvincibilityShield.png
+/build:Assets/MainShip/MainshipweaponProjectileAutocannonbullet.png
 
-#begin Assets/Main Ship/Main Ship - Shields/PNGs/MainShipShieldsRoundShield.png
+#begin Assets/MainShip/MainshipweaponProjectileBigSpaceGun.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -743,9 +755,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Shields/PNGs/MainShipShieldsRoundShield.png
+/build:Assets/MainShip/MainshipweaponProjectileBigSpaceGun.png
 
-#begin Assets/Main Ship/Main Ship - Weapons/PNGs/MainShipWeaponsAutoCannon.png
+#begin Assets/MainShip/MainshipweaponProjectileRocket.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -755,9 +767,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Weapons/PNGs/MainShipWeaponsAutoCannon.png
+/build:Assets/MainShip/MainshipweaponProjectileRocket.png
 
-#begin Assets/Main Ship/Main Ship - Weapons/PNGs/MainShipWeaponsBigSpaceGun.png
+#begin Assets/MainShip/MainshipweaponProjectileZapper.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -767,9 +779,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Weapons/PNGs/MainShipWeaponsBigSpaceGun.png
+/build:Assets/MainShip/MainshipweaponProjectileZapper.png
 
-#begin Assets/Main Ship/Main Ship - Weapons/PNGs/MainShipWeaponsRockets.png
+#begin Assets/MainShip/MainShipWeaponsAutoCannon.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -779,9 +791,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Weapons/PNGs/MainShipWeaponsRockets.png
+/build:Assets/MainShip/MainShipWeaponsAutoCannon.png
 
-#begin Assets/Main Ship/Main Ship - Weapons/PNGs/MainShipWeaponsZapper.png
+#begin Assets/MainShip/MainShipWeaponsBigSpaceGun.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -791,9 +803,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Main Ship/Main Ship - Weapons/PNGs/MainShipWeaponsZapper.png
+/build:Assets/MainShip/MainShipWeaponsBigSpaceGun.png
 
-#begin Assets/Nautolan/Bases/NautolanShipBattlecruiserBase.gif
+#begin Assets/MainShip/MainShipWeaponsRockets.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -803,9 +815,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Bases/NautolanShipBattlecruiserBase.gif
+/build:Assets/MainShip/MainShipWeaponsRockets.png
 
-#begin Assets/Nautolan/Bases/NautolanShipBomberBase.gif
+#begin Assets/MainShip/MainShipWeaponsZapper.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -815,9 +827,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Bases/NautolanShipBomberBase.gif
+/build:Assets/MainShip/MainShipWeaponsZapper.png
 
-#begin Assets/Nautolan/Bases/NautolanShipDreadnoughtBase.gif
+#begin Assets/PickUps/PickupIconEnginesBaseEngine.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -827,9 +839,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Bases/NautolanShipDreadnoughtBase.gif
+/build:Assets/PickUps/PickupIconEnginesBaseEngine.png
 
-#begin Assets/Nautolan/Bases/NautolanShipFighterBase.gif
+#begin Assets/PickUps/PickupIconEnginesBigPulseEngine.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -839,9 +851,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Bases/NautolanShipFighterBase.gif
+/build:Assets/PickUps/PickupIconEnginesBigPulseEngine.png
 
-#begin Assets/Nautolan/Bases/NautolanShipFrigateBase.gif
+#begin Assets/PickUps/PickupIconEnginesBurstEngine.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -851,9 +863,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Bases/NautolanShipFrigateBase.gif
+/build:Assets/PickUps/PickupIconEnginesBurstEngine.png
 
-#begin Assets/Nautolan/Bases/NautolanShipScoutBase.gif
+#begin Assets/PickUps/PickupIconEnginesSuperchargedEngine.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -863,9 +875,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Bases/NautolanShipScoutBase.gif
+/build:Assets/PickUps/PickupIconEnginesSuperchargedEngine.png
 
-#begin Assets/Nautolan/Bases/NautolanShipSupportBase.gif
+#begin Assets/PickUps/PickupIconShieldGeneratorAllaroundshield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -875,9 +887,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Bases/NautolanShipSupportBase.gif
+/build:Assets/PickUps/PickupIconShieldGeneratorAllaroundshield.png
 
-#begin Assets/Nautolan/Bases/NautolanShipTorpedoShip.gif
+#begin Assets/PickUps/PickupIconShieldGeneratorFrontandSideShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -887,9 +899,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Bases/NautolanShipTorpedoShip.gif
+/build:Assets/PickUps/PickupIconShieldGeneratorFrontandSideShield.png
 
-#begin Assets/Nautolan/Destruction/NautolanShipBattlecruiser.gif
+#begin Assets/PickUps/PickupIconShieldGeneratorFrontShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -899,9 +911,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Destruction/NautolanShipBattlecruiser.gif
+/build:Assets/PickUps/PickupIconShieldGeneratorFrontShield.png
 
-#begin Assets/Nautolan/Destruction/NautolanShipBomber.gif
+#begin Assets/PickUps/PickupIconShieldGeneratorInvincibilityShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -911,9 +923,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Destruction/NautolanShipBomber.gif
+/build:Assets/PickUps/PickupIconShieldGeneratorInvincibilityShield.png
 
-#begin Assets/Nautolan/Destruction/NautolanShipDreadnought.gif
+#begin Assets/PickUps/PickupIconWeaponsAutoCannons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -923,9 +935,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Destruction/NautolanShipDreadnought.gif
+/build:Assets/PickUps/PickupIconWeaponsAutoCannons.png
 
-#begin Assets/Nautolan/Destruction/NautolanShipFighter.gif
+#begin Assets/PickUps/PickupIconWeaponsBigSpaceGun2000.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -935,9 +947,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Destruction/NautolanShipFighter.gif
+/build:Assets/PickUps/PickupIconWeaponsBigSpaceGun2000.png
 
-#begin Assets/Nautolan/Destruction/NautolanShipFrigate.gif
+#begin Assets/PickUps/PickupIconWeaponsRocket.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -947,9 +959,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Destruction/NautolanShipFrigate.gif
+/build:Assets/PickUps/PickupIconWeaponsRocket.png
 
-#begin Assets/Nautolan/Destruction/NautolanShipScout.gif
+#begin Assets/PickUps/PickupIconWeaponsZapper.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -959,693 +971,69 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Destruction/NautolanShipScout.gif
+/build:Assets/PickUps/PickupIconWeaponsZapper.png
 
-#begin Assets/Nautolan/Destruction/NautolanShipSupport.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Destruction/NautolanShipSupport.gif
-
-#begin Assets/Nautolan/Destruction/NautolanShipTorpedoShip.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Destruction/NautolanShipTorpedoShip.gif
-
-#begin Assets/Nautolan/Engines/NautolanShipBattlecruiserEngineEffect.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Engines/NautolanShipBattlecruiserEngineEffect.gif
-
-#begin Assets/Nautolan/Engines/NautolanShipBomberEngineEffect.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Engines/NautolanShipBomberEngineEffect.gif
-
-#begin Assets/Nautolan/Engines/NautolanShipDreadnoughtEngineEffect.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Engines/NautolanShipDreadnoughtEngineEffect.gif
-
-#begin Assets/Nautolan/Engines/NautolanShipFighterEngineEffect.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Engines/NautolanShipFighterEngineEffect.gif
-
-#begin Assets/Nautolan/Engines/NautolanShipFrigateEngineEffect.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Engines/NautolanShipFrigateEngineEffect.gif
-
-#begin Assets/Nautolan/Engines/NautolanShipScoutEngineEffect.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Engines/NautolanShipScoutEngineEffect.gif
-
-#begin Assets/Nautolan/Engines/NautolanShipSupportEngineEffect.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Engines/NautolanShipSupportEngineEffect.gif
-
-#begin Assets/Nautolan/Engines/NautolanShipTorpedoShipEngineEffect.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Engines/NautolanShipTorpedoShipEngineEffect.gif
-
-#begin Assets/Nautolan/Projectiles/NautolanBomb.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Projectiles/NautolanBomb.gif
-
-#begin Assets/Nautolan/Projectiles/NautolanBullet.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Projectiles/NautolanBullet.gif
-
-#begin Assets/Nautolan/Projectiles/NautolanRay.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Projectiles/NautolanRay.gif
-
-#begin Assets/Nautolan/Projectiles/NautolanRocket.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Projectiles/NautolanRocket.gif
-
-#begin Assets/Nautolan/Projectiles/NautolanSpinningBullet.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Projectiles/NautolanSpinningBullet.gif
-
-#begin Assets/Nautolan/Projectiles/NautolanWave.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Projectiles/NautolanWave.gif
-
-#begin Assets/Nautolan/Shields/Nautolan ShipBattlecruiserShield.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Shields/Nautolan ShipBattlecruiserShield.gif
-
-#begin Assets/Nautolan/Shields/NautolanShipBomberShield.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Shields/NautolanShipBomberShield.gif
-
-#begin Assets/Nautolan/Shields/NautolanShipDreadnoughtShield.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Shields/NautolanShipDreadnoughtShield.gif
-
-#begin Assets/Nautolan/Shields/NautolanShipFighterShield.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Shields/NautolanShipFighterShield.gif
-
-#begin Assets/Nautolan/Shields/NautolanShipFrigateShield.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Shields/NautolanShipFrigateShield.gif
-
-#begin Assets/Nautolan/Shields/NautolanShipScoutShield.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Shields/NautolanShipScoutShield.gif
-
-#begin Assets/Nautolan/Shields/NautolanShipTorpedoShipShield.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Shields/NautolanShipTorpedoShipShield.gif
-
-#begin Assets/Nautolan/Weapons/NautolanShipBattlecruiserWeapons.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Weapons/NautolanShipBattlecruiserWeapons.gif
-
-#begin Assets/Nautolan/Weapons/NautolanShipDreadnoughtWeapons.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Weapons/NautolanShipDreadnoughtWeapons.gif
-
-#begin Assets/Nautolan/Weapons/NautolanShipFighterWeapons.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Weapons/NautolanShipFighterWeapons.gif
-
-#begin Assets/Nautolan/Weapons/NautolanShipFrigatWeapons.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Weapons/NautolanShipFrigatWeapons.gif
-
-#begin Assets/Nautolan/Weapons/NautolanShipScoutWeapons.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Weapons/NautolanShipScoutWeapons.gif
-
-#begin Assets/Nautolan/Weapons/NautolanShipTorpedoShipWeapons.gif
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Nautolan/Weapons/NautolanShipTorpedoShipWeapons.gif
-
-#begin Assets/PNGs/PickupIconEnginesBaseEngine.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconEnginesBaseEngine.png
-
-#begin Assets/PNGs/PickupIconEnginesBigPulseEngine.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconEnginesBigPulseEngine.png
-
-#begin Assets/PNGs/PickupIconEnginesBurstEngine.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconEnginesBurstEngine.png
-
-#begin Assets/PNGs/PickupIconEnginesSuperchargedEngine.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconEnginesSuperchargedEngine.png
-
-#begin Assets/PNGs/PickupIconShieldGeneratorAllaroundshield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconShieldGeneratorAllaroundshield.png
-
-#begin Assets/PNGs/PickupIconShieldGeneratorFrontandSideShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconShieldGeneratorFrontandSideShield.png
-
-#begin Assets/PNGs/PickupIconShieldGeneratorFrontShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconShieldGeneratorFrontShield.png
-
-#begin Assets/PNGs/PickupIconShieldGeneratorInvincibilityShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconShieldGeneratorInvincibilityShield.png
-
-#begin Assets/PNGs/PickupIconWeaponsAutoCannons.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconWeaponsAutoCannons.png
-
-#begin Assets/PNGs/PickupIconWeaponsBigSpaceGun2000.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconWeaponsBigSpaceGun2000.png
-
-#begin Assets/PNGs/PickupIconWeaponsRocket.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconWeaponsRocket.png
-
-#begin Assets/PNGs/PickupIconWeaponsZapper.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/PNGs/PickupIconWeaponsZapper.png
-
-#begin Assets/Shield Generators/PNGs/PickupIconShieldGeneratorAllaroundshield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shield Generators/PNGs/PickupIconShieldGeneratorAllaroundshield.png
-
-#begin Assets/Shield Generators/PNGs/PickupIconShieldGeneratorFrontandSideShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shield Generators/PNGs/PickupIconShieldGeneratorFrontandSideShield.png
-
-#begin Assets/Shield Generators/PNGs/PickupIconShieldGeneratorFrontShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shield Generators/PNGs/PickupIconShieldGeneratorFrontShield.png
-
-#begin Assets/Shield Generators/PNGs/PickupIconShieldGeneratorInvincibilityShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shield Generators/PNGs/PickupIconShieldGeneratorInvincibilityShield.png
-
-#begin Assets/Shields/PNGs/NautolanShipBomberShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shields/PNGs/NautolanShipBomberShield.png
-
-#begin Assets/Shields/PNGs/NautolanShipDreadnoughtShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shields/PNGs/NautolanShipDreadnoughtShield.png
-
-#begin Assets/Shields/PNGs/NautolanShipFighterShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shields/PNGs/NautolanShipFighterShield.png
-
-#begin Assets/Shields/PNGs/NautolanShipFrigateShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shields/PNGs/NautolanShipFrigateShield.png
-
-#begin Assets/Shields/PNGs/NautolanShipScoutShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shields/PNGs/NautolanShipScoutShield.png
-
-#begin Assets/Shields/PNGs/NautolanShipTorpedoShipShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shields/PNGs/NautolanShipTorpedoShipShield.png
-
-#begin Assets/Shields/PNGs/NautolaShipBattlnecruiserShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Shields/PNGs/NautolaShipBattlnecruiserShield.png
-
-#begin Assets/Space Music Pack/battle.wav
+#begin Assets/SpaceMusicPack/battle.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/battle.wav
+/build:Assets/SpaceMusicPack/battle.wav
 
-#begin Assets/Space Music Pack/in_the-wreckage.wav
+#begin Assets/SpaceMusicPack/in_the_wreckage.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/in_the-wreckage.wav
+/build:Assets/SpaceMusicPack/in_the_wreckage.wav
 
-#begin Assets/Space Music Pack/laser_shot.wav
+#begin Assets/SpaceMusicPack/laser_shot.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/laser_shot.wav
+/build:Assets/SpaceMusicPack/laser_shot.wav
 
-#begin Assets/Space Music Pack/Light-Years_V001_Looping.mp3
+#begin Assets/SpaceMusicPack/LightYears.mp3
 /importer:Mp3Importer
 /processor:SongProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/Light-Years_V001_Looping.mp3
+/build:Assets/SpaceMusicPack/LightYears.mp3
 
-#begin Assets/Space Music Pack/loading.wav
+#begin Assets/SpaceMusicPack/loading.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/loading.wav
+/build:Assets/SpaceMusicPack/loading.wav
 
-#begin Assets/Space Music Pack/meet_the-princess.wav
+#begin Assets/SpaceMusicPack/meet_the_princess.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/meet_the-princess.wav
+/build:Assets/SpaceMusicPack/meet_the_princess.wav
 
-#begin Assets/Space Music Pack/menu.wav
+#begin Assets/SpaceMusicPack/menu.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/menu.wav
+/build:Assets/SpaceMusicPack/menu.wav
 
-#begin Assets/Space Music Pack/scream.wav
+#begin Assets/SpaceMusicPack/scream.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/scream.wav
+/build:Assets/SpaceMusicPack/scream.wav
 
-#begin Assets/Space Music Pack/slow_travel.wav
+#begin Assets/SpaceMusicPack/slow_travel.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/slow_travel.wav
+/build:Assets/SpaceMusicPack/slow_travel.wav
 
-#begin Assets/Space Music Pack/start_level.wav
+#begin Assets/SpaceMusicPack/start_level.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Assets/Space Music Pack/start_level.wav
+/build:Assets/SpaceMusicPack/start_level.wav
 
-#begin Assets/Weapon Effects - Projectiles/PNGs/NautolanBomb.png
+#begin Assets/Weapons/NautolanBomb.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1655,9 +1043,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapon Effects - Projectiles/PNGs/NautolanBomb.png
+/build:Assets/Weapons/NautolanBomb.png
 
-#begin Assets/Weapon Effects - Projectiles/PNGs/NautolanBullet.png
+#begin Assets/Weapons/NautolanBullet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1667,9 +1055,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapon Effects - Projectiles/PNGs/NautolanBullet.png
+/build:Assets/Weapons/NautolanBullet.png
 
-#begin Assets/Weapon Effects - Projectiles/PNGs/NautolanRay.png
+#begin Assets/Weapons/NautolanRay.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1679,9 +1067,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapon Effects - Projectiles/PNGs/NautolanRay.png
+/build:Assets/Weapons/NautolanRay.png
 
-#begin Assets/Weapon Effects - Projectiles/PNGs/NautolanRocket.png
+#begin Assets/Weapons/NautolanRocket.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1691,9 +1079,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapon Effects - Projectiles/PNGs/NautolanRocket.png
+/build:Assets/Weapons/NautolanRocket.png
 
-#begin Assets/Weapon Effects - Projectiles/PNGs/NautolanSpinning Bullet.png
+#begin Assets/Weapons/NautolanShipBattlecruiserWeapons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1703,9 +1091,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapon Effects - Projectiles/PNGs/NautolanSpinning Bullet.png
+/build:Assets/Weapons/NautolanShipBattlecruiserWeapons.png
 
-#begin Assets/Weapon Effects - Projectiles/PNGs/NautolanWave.png
+#begin Assets/Weapons/NautolanShipDreadnoughtWeapons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1715,9 +1103,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapon Effects - Projectiles/PNGs/NautolanWave.png
+/build:Assets/Weapons/NautolanShipDreadnoughtWeapons.png
 
-#begin Assets/Weapons/PNGs/NautolanShipBattlecruiserWeapons.png
+#begin Assets/Weapons/NautolanShipFighterWeapons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1727,9 +1115,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/NautolanShipBattlecruiserWeapons.png
+/build:Assets/Weapons/NautolanShipFighterWeapons.png
 
-#begin Assets/Weapons/PNGs/NautolanShipDreadnoughtWeapons.png
+#begin Assets/Weapons/NautolanShipFrigateWeapons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1739,9 +1127,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/NautolanShipDreadnoughtWeapons.png
+/build:Assets/Weapons/NautolanShipFrigateWeapons.png
 
-#begin Assets/Weapons/PNGs/NautolanShipFighterWeapons.png
+#begin Assets/Weapons/NautolanShipScoutWeapons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1751,9 +1139,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/NautolanShipFighterWeapons.png
+/build:Assets/Weapons/NautolanShipScoutWeapons.png
 
-#begin Assets/Weapons/PNGs/NautolanShipFrigateWeapons.png
+#begin Assets/Weapons/NautolanShipTorpedo ShipWeapons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1763,9 +1151,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/NautolanShipFrigateWeapons.png
+/build:Assets/Weapons/NautolanShipTorpedo ShipWeapons.png
 
-#begin Assets/Weapons/PNGs/NautolanShipScoutWeapons.png
+#begin Assets/Weapons/NautolanSpinning Bullet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1775,9 +1163,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/NautolanShipScoutWeapons.png
+/build:Assets/Weapons/NautolanSpinning Bullet.png
 
-#begin Assets/Weapons/PNGs/NautolanShipTorpedo ShipWeapons.png
+#begin Assets/Weapons/NautolanWave.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1787,9 +1175,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/NautolanShipTorpedo ShipWeapons.png
+/build:Assets/Weapons/NautolanWave.png
 
-#begin Assets/Weapons/PNGs/PickupIconWeaponsAutoCannons.png
+#begin Assets/Weapons/PickupIconWeaponsAutoCannons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1799,9 +1187,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/PickupIconWeaponsAutoCannons.png
+/build:Assets/Weapons/PickupIconWeaponsAutoCannons.png
 
-#begin Assets/Weapons/PNGs/PickupIconWeaponsBigSpaceGun2000.png
+#begin Assets/Weapons/PickupIconWeaponsBigSpaceGun2000.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1811,9 +1199,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/PickupIconWeaponsBigSpaceGun2000.png
+/build:Assets/Weapons/PickupIconWeaponsBigSpaceGun2000.png
 
-#begin Assets/Weapons/PNGs/PickupIconWeaponsRocket.png
+#begin Assets/Weapons/PickupIconWeaponsRocket.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1823,9 +1211,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/PickupIconWeaponsRocket.png
+/build:Assets/Weapons/PickupIconWeaponsRocket.png
 
-#begin Assets/Weapons/PNGs/PickupIconWeaponsZapper.png
+#begin Assets/Weapons/PickupIconWeaponsZapper.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1835,5 +1223,5 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Weapons/PNGs/PickupIconWeaponsZapper.png
+/build:Assets/Weapons/PickupIconWeaponsZapper.png
 
