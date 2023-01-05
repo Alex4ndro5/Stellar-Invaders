@@ -47,7 +47,7 @@ namespace Stellar_Invaders
             // TODO: use this.Content to load your game content here
 
             //Wczytujemy tekstury do obiektow
-            texMainShip = Content.Load<Texture2D>(path + "\\MainShip\\MainShipBaseSlightdamage");
+            texMainShip = Content.Load<Texture2D>(path + "\\MainShip\\MainShipBaseFullHealth");
             texNautolanShipScout = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipBomberBase");
         }
 

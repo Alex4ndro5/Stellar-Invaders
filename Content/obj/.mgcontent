@@ -13,9 +13,13 @@
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Background/Purple_Nebula_2.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Background/Starfield_1.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Background/Starfield_2.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/AsteroidBase.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/AsteroidExplode.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/AsteroidFlame.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipBattlecruiser.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipBattlecruiserBase.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipBattlecruiserEngineEffect.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipBattlecruiserShield.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipBomber.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipBomberBase.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipBomberEngineEffect.png</File>
@@ -32,7 +36,11 @@
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipFrigateBase.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipFrigateEngineEffect.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipFrigateShield.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipScout.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipScoutBase.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipScoutEngineEffect.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipScoutShield.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipScoutWeapons.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipSupport.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipSupportBase.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipSupportEngineEffect.png</File>
@@ -40,8 +48,8 @@
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipTorpedoBase.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipTorpedoShipEngineEffect.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipTorpedoShipShield.png</File>
-    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolaShipBattlnecruiserShield.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/MainShip/MainShipBaseDamaged.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/MainShip/MainShipBaseFullhealth.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/MainShip/MainShipBaseSlightdamage.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/MainShip/MainShipBaseVerydamaged.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/MainShip/MainShipEnginesBaseEngine.png</File>
@@ -112,6 +120,14 @@
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Weapons/PickupIconWeaponsZapper.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -121,6 +121,42 @@
 /processorParam:TextureFormat=Color
 /build:Assets/Background/Starfield_2.png
 
+#begin Assets/Enemies/AsteroidBase.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Enemies/AsteroidBase.png
+
+#begin Assets/Enemies/AsteroidExplode.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Enemies/AsteroidExplode.png
+
+#begin Assets/Enemies/AsteroidFlame.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Enemies/AsteroidFlame.png
+
 #begin Assets/Enemies/NautolanShipBattlecruiser.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -156,6 +192,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Assets/Enemies/NautolanShipBattlecruiserEngineEffect.png
+
+#begin Assets/Enemies/NautolanShipBattlecruiserShield.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Enemies/NautolanShipBattlecruiserShield.png
 
 #begin Assets/Enemies/NautolanShipBomber.png
 /importer:TextureImporter
@@ -349,6 +397,42 @@
 /processorParam:TextureFormat=Color
 /build:Assets/Enemies/NautolanShipFrigateShield.png
 
+#begin Assets/Enemies/NautolanShipScout.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Enemies/NautolanShipScout.png
+
+#begin Assets/Enemies/NautolanShipScoutBase.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Enemies/NautolanShipScoutBase.png
+
+#begin Assets/Enemies/NautolanShipScoutEngineEffect.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Enemies/NautolanShipScoutEngineEffect.png
+
 #begin Assets/Enemies/NautolanShipScoutShield.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -360,6 +444,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Assets/Enemies/NautolanShipScoutShield.png
+
+#begin Assets/Enemies/NautolanShipScoutWeapons.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/Enemies/NautolanShipScoutWeapons.png
 
 #begin Assets/Enemies/NautolanShipSupport.png
 /importer:TextureImporter
@@ -445,18 +541,6 @@
 /processorParam:TextureFormat=Color
 /build:Assets/Enemies/NautolanShipTorpedoShipShield.png
 
-#begin Assets/Enemies/NautolaShipBattlnecruiserShield.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Assets/Enemies/NautolaShipBattlnecruiserShield.png
-
 #begin Assets/MainShip/MainShipBaseDamaged.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -468,6 +552,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Assets/MainShip/MainShipBaseDamaged.png
+
+#begin Assets/MainShip/MainShipBaseFullhealth.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Assets/MainShip/MainShipBaseFullhealth.png
 
 #begin Assets/MainShip/MainShipBaseSlightdamage.png
 /importer:TextureImporter
