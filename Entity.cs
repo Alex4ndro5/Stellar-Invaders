@@ -38,4 +38,5 @@ namespace Stellar_Invaders
                 Console.WriteLine("[BaseEntity] body not found, skipping position updates.");
             }
         }
+    }
 }
