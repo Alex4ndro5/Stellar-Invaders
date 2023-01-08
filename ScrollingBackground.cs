@@ -17,7 +17,7 @@ namespace Stellar_Invaders
         {
             this.textures = textures;
 
-            for (int i = -1; i < 2; i++) // position indexes
+            for (int i = -1; i < 2; i++) // indeksy pozycji 
             {
                 for (int j = 0; j < 3; j++)
                 { // 3 layers

@@ -84,6 +84,12 @@ namespace Stellar_Invaders
 
             // TODO: use this.Content to load your game content here
 
+            //Wczytywanie teł
+            for (int i = 1; i < 3; i++)
+            {
+                texBgs.Add(Content.Load<Texture2D>(path + "\\Background\\Starfield_" + i));
+            }
+
             //Wczytujemy tekstury do obiektow
             texMainShip = Content.Load<Texture2D>(path + "\\MainShip\\MainShipBaseFullHealth");
             texNautolanShipScout = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipScoutBase");
@@ -101,7 +107,7 @@ namespace Stellar_Invaders
             sndBtnDown = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\sndBtnDown");
             sndBtnOver = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\sndBtnOver");
 
-
+            
 
             // Load sprite fonts
             fontArial = Content.Load<SpriteFont>("arialHeading");
@@ -117,6 +123,11 @@ namespace Stellar_Invaders
                 Exit();
 
             // TODO: Add your update logic here
+
+            keyState = Keyboard.GetState();
+
+            scrollingBackground.Update(gameTime);
+
             switch (_gameState)
             {
                 case GameState.MainMenu:
