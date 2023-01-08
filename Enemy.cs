@@ -17,7 +17,7 @@ namespace Stellar_Invaders
         {
             this.texture = texture;
             sprite = new AnimatedSprite(this.texture, 16, 16, 10);
-            scale = new Vector2(GameSI.randFloat(10, 20) * 0.1f);
+            scale = new Vector2(GameSI.RandFloat(10, 20) * 0.1f);
             sourceOrigin = new Vector2(sprite.frameWidth * 0.5f, sprite.frameHeight * 0.5f);
             destOrigin = new Vector2((sprite.frameWidth * 0.5f) * scale.X, (sprite.frameHeight * 0.5f) * scale.Y);
             this.position = position;

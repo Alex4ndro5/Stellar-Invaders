@@ -21,7 +21,7 @@ namespace Stellar_Invaders
             {
                 for (int j = 0; j < 3; j++)
                 { // 3 layers
-                    Texture2D texture = textures[GameSI.randInt(0, textures.Count - 1)];
+                    Texture2D texture = textures[GameSI.RandInt(0, textures.Count - 1)];
                     Vector2 position = new Vector2(0, texture.Height * i);
                     Vector2 velocity = new Vector2(0, (j + 1) * 0.2f);
                     ScrollingBackgroundLayer layer = new ScrollingBackgroundLayer(this, texture, j, i, position, velocity);

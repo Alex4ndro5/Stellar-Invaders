@@ -14,11 +14,11 @@ namespace Stellar_Invaders
         public string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Content\\bin\\Assets";
 
         // Przygotowanie obiektow 
-        private GraphicsDeviceManager graphics;
+        private readonly GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
 
         // Lista zawierajaca textury tła (background)
-        private List<Texture2D> texBgs = new List<Texture2D>();
+        private List<Texture2D> texBgs = new();
         // Obiekty zawierajacy tekstury
         private Texture2D texNautolanShipScout;
         private Texture2D texNautolanShipBomber;
@@ -60,10 +60,10 @@ namespace Stellar_Invaders
         private MenuButton restartButton;
 
         //Liczenie eksplozji, wrogów, laserów
-        private List<Explosion> explosions = new List<Explosion>();
-        private List<Enemy> enemies = new List<Enemy>();
-        private List<EnemyLaser> enemyLasers = new List<EnemyLaser>();
-        private List<PlayerLaser> playerLasers = new List<PlayerLaser>();
+        private List<Explosion> explosions = new();
+        private List<Enemy> enemies = new();
+        private List<EnemyLaser> enemyLasers = new();
+        private List<PlayerLaser> playerLasers = new();
         private Player player = null;
         private ScrollingBackground scrollingBackground;
 
@@ -93,8 +93,8 @@ namespace Stellar_Invaders
 
             IsMouseVisible = true;
 
-            graphics.PreferredBackBufferWidth = 480;
-            graphics.PreferredBackBufferHeight = 640;
+            graphics.PreferredBackBufferWidth = 1024;
+            graphics.PreferredBackBufferHeight = 1024;
             graphics.ApplyChanges();
 
             base.Initialize();
@@ -145,7 +145,7 @@ namespace Stellar_Invaders
             playButton = new MenuButton(this, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (int)(texBtnPlay.Width * 0.5), graphics.PreferredBackBufferHeight * 0.5f), texBtnPlay, texBtnPlayDown, texBtnPlayHover);
             restartButton = new MenuButton(this, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (int)(texBtnPlay.Width * 0.5), graphics.PreferredBackBufferHeight * 0.5f), texBtnRestart, texBtnRestartDown, texBtnRestartHover);
 
-            changeGameState(GameState.MainMenu);
+            ChangeGameState(GameState.MainMenu);
         }
 
         protected override void Update(GameTime gameTime)
@@ -205,7 +205,7 @@ namespace Stellar_Invaders
 
                     if (mouseState.LeftButton == ButtonState.Released && playButton.lastIsDown)
                     {
-                        changeGameState(GameState.Gameplay);
+                        ChangeGameState(GameState.Gameplay);
                     }
                 }
                 else
@@ -242,7 +242,7 @@ namespace Stellar_Invaders
                     }
                     else
                     {
-                        changeGameState(GameState.GameOver);
+                        ChangeGameState(GameState.GameOver);
                         restartTick = 0;
                     }
                 }
@@ -273,7 +273,7 @@ namespace Stellar_Invaders
                         else
                         {
                             laser_shot.Play();
-                            PlayerLaser laser = new PlayerLaser(texMainShipLaserProjectileBSG, new Vector2(player.position.X + player.destOrigin.X, player.position.Y), new Vector2(0, -10));
+                            PlayerLaser laser = new(texMainShipLaserProjectileBSG, new Vector2(player.position.X + player.destOrigin.X, player.position.Y), new Vector2(0, -10));
                             playerLasers.Add(laser);
                             playerShootTick = 0;
                         }
@@ -309,7 +309,7 @@ namespace Stellar_Invaders
                         if (player.body.boundingBox.Intersects(enemyLasers[i].body.boundingBox))
                         {
                             sndExplode.Play();
-                            Explosion explosion = new Explosion(texExplosion, new Vector2(player.position.X + player.destOrigin.X, player.position.Y + player.destOrigin.Y));
+                            Explosion explosion = new(texExplosion, new Vector2(player.position.X + player.destOrigin.X, player.position.Y + player.destOrigin.Y));
                             explosions.Add(explosion);
 
                             player.setDead(true);
@@ -335,7 +335,7 @@ namespace Stellar_Invaders
                         if (player.body.boundingBox.Intersects(enemies[i].body.boundingBox))
                         {
                             sndExplode.Play();
-                            Explosion explosion = new Explosion(texExplosion, new Vector2(player.position.X + player.destOrigin.X, player.position.Y + player.destOrigin.Y));
+                            Explosion explosion = new(texExplosion, new Vector2(player.position.X + player.destOrigin.X, player.position.Y + player.destOrigin.Y));
                             explosions.Add(explosion);
 
                             player.setDead(true);
@@ -347,7 +347,7 @@ namespace Stellar_Invaders
 
                             if (enemy.canShoot)
                             {
-                                EnemyLaser laser = new EnemyLaser(texMainShipLaserProjectileBSG, new Vector2(enemy.position.X, enemy.position.Y), new Vector2(0, 5));
+                                EnemyLaser laser = new(texMainShipLaserProjectileBSG, new Vector2(enemy.position.X, enemy.position.Y), new Vector2(0, 5));
                                 enemyLasers.Add(laser);
 
                                 enemy.resetCanShoot();
@@ -372,11 +372,11 @@ namespace Stellar_Invaders
 
                                 if (enemy.position.X + (enemy.destOrigin.X) < player.position.X + (player.destOrigin.X))
                                 {
-                                    enemy.angle = enemy.angle - 5;
+                                    enemy.angle -= 5;
                                 }
                                 else
                                 {
-                                    enemy.angle = enemy.angle + 5;
+                                    enemy.angle += 5;
                                 }
                             }
                         }
@@ -408,8 +408,10 @@ namespace Stellar_Invaders
                     {
                         sndExplode.Play();
 
-                        Explosion explosion = new Explosion(texExplosion, new Vector2(enemies[j].position.X, enemies[j].position.Y));
-                        explosion.scale = enemies[j].scale;
+                        Explosion explosion = new(texExplosion, new Vector2(enemies[j].position.X, enemies[j].position.Y))
+                        {
+                            scale = enemies[j].scale
+                        };
 
                         Console.WriteLine("Shot enemy.  Origin: " + enemies[j].destOrigin + ", pos: " + enemies[j].position);
 
@@ -438,20 +440,20 @@ namespace Stellar_Invaders
             {
                 Enemy enemy = null;
 
-                if (randInt(0, 10) <= 3)
+                if (RandInt(0, 10) <= 3)
                 {
-                    Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-                    enemy = new ScoutShip(texNautolanShipScout, spawnPos, new Vector2(0, randFloat(1, 3)));
+                    Vector2 spawnPos = new (RandFloat(0, graphics.PreferredBackBufferWidth), -128);
+                    enemy = new ScoutShip(texNautolanShipScout, spawnPos, new Vector2(0, RandFloat(1, 3)));
                 }
-                else if (randInt(0, 10) >= 5)
+                else if (RandInt(0, 10) >= 5)
                 {
-                    Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-                    enemy = new BomberShip(texNautolanShipBomber, spawnPos, new Vector2(0, randFloat(1, 3)));
+                    Vector2 spawnPos = new(RandFloat(0, graphics.PreferredBackBufferWidth), -128);
+                    enemy = new BomberShip(texNautolanShipBomber, spawnPos, new Vector2(0, RandFloat(1, 3)));
                 }
                 else
                 {
-                    Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-                    enemy = new DreadnoughtShip(texNautolanShipDreadnought, spawnPos, new Vector2(0, randFloat(1, 3)));
+                    Vector2 spawnPos = new(RandFloat(0, graphics.PreferredBackBufferWidth), -128);
+                    enemy = new DreadnoughtShip(texNautolanShipDreadnought, spawnPos, new Vector2(0, RandFloat(1, 3)));
                 }
 
                 enemies.Add(enemy);
@@ -482,7 +484,7 @@ namespace Stellar_Invaders
 
                     if (mouseState.LeftButton == ButtonState.Released && restartButton.lastIsDown)
                     {
-                        changeGameState(GameState.Gameplay);
+                        ChangeGameState(GameState.Gameplay);
                     }
                 }
                 else
@@ -499,7 +501,7 @@ namespace Stellar_Invaders
             }
 
         }
-        private void resetGameplay()
+        private void ResetGameplay()
         {
             if (player != null)
             {
@@ -510,7 +512,7 @@ namespace Stellar_Invaders
 
         //Czyszczenie list obiektów, zmiana stanu gry 
 
-        private void changeGameState(GameState gameState)
+        private void ChangeGameState(GameState gameState)
         {
             playButton.isActive = false;
             restartButton.isActive = false;
@@ -518,7 +520,7 @@ namespace Stellar_Invaders
             enemies.Clear();
             playerLasers.Clear();
             enemyLasers.Clear();
-            resetGameplay();
+            ResetGameplay();
 
             _gameState = gameState;
         }
@@ -601,12 +603,12 @@ namespace Stellar_Invaders
 
             restartButton.Draw(spriteBatch);
         }
-        public static int randInt(int minNumber, int maxNumber)
+        public static int RandInt(int minNumber, int maxNumber)
         {
             return new Random().Next(minNumber, maxNumber);
         }
 
-        public static float randFloat(float minNumber, float maxNumber)
+        public static float RandFloat(float minNumber, float maxNumber)
         {
             return (float)new Random().NextDouble() * (maxNumber - minNumber) + minNumber;
         }
