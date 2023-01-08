@@ -49,6 +49,12 @@
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipTorpedoBase.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipTorpedoShipEngineEffect.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Enemies/NautolanShipTorpedoShipShield.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/GUI/sprBtnPlay.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/GUI/sprBtnPlayDown.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/GUI/sprBtnPlayHover.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/GUI/sprBtnRestart.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/GUI/sprBtnRestartDown.png</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/GUI/sprBtnRestartHover.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/MainShip/MainShipBaseDamaged.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/MainShip/MainShipBaseFullhealth.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/MainShip/MainShipBaseSlightdamage.png</File>
@@ -121,6 +127,12 @@
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Weapons/PickupIconWeaponsZapper.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
