@@ -22,18 +22,20 @@ namespace Stellar_Invaders
         private Texture2D texNautolanShipBomber;
         private Texture2D texNautolanShipDreadnought;
         private Texture2D texMainShip;
-        private Texture2D texMainShipLaserAutoCannon;
+        private Texture2D texMainShipLaserProjectileBSG;
         private Texture2D texBtnPlay;
         private Texture2D texBtnPlayDown;
         private Texture2D texBtnPlayHover;
         private Texture2D texBtnRestart;
         private Texture2D texBtnRestartDown;
         private Texture2D texBtnRestartHover;
+        private Texture2D texExplosion;
 
         public SoundEffect sndBtnDown;
         public SoundEffect sndBtnOver;
         // Obiekt zawierajacy wystrzal laseru
         public SoundEffect laser_shot;
+        public SoundEffect sndExplode;
         // Obiekt zawierajacy czcionke
         private SpriteFont fontArial;
         /// <summary>
@@ -48,7 +50,7 @@ namespace Stellar_Invaders
         /// <summary>
         /// Przetrzymuje status gry
         /// </summary>
-        private GameState _gameState;
+        private GameState gameState;
         public static int randInt(int minNumber, int maxNumber)
         {
             return new Random().Next(minNumber, maxNumber);
@@ -96,9 +98,10 @@ namespace Stellar_Invaders
             texNautolanShipScout = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipScoutBase");
             texNautolanShipBomber = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipBomberBase");
             texNautolanShipDreadnought = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipDreadnoughtBase");
+            texExplosion = Content.Load<Texture2D>(path + "\\Enemies\\AsteroidFlame");
 
             //Wczytywanie laserów
-            texMainShipLaserAutoCannon = Content.Load<Texture2D>(path + "\\MainShip\\MainShipWeaponsAutoCannon");
+            texMainShipLaserProjectileBSG = Content.Load<Texture2D>(path + "\\MainShip\\MainshipweaponProjectileBigSpaceGun");
 
             //Tekstu do przyciskow
             texBtnPlay = Content.Load<Texture2D>(path + "\\GUI\\sprBtnPlay");
@@ -113,8 +116,7 @@ namespace Stellar_Invaders
             sndBtnDown = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\sndBtnDown");
             sndBtnOver = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\sndBtnOver");
             laser_shot = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\laser_shot");
-
-
+            sndExplode = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\scream");
 
             // Load sprite fonts
             fontArial = Content.Load<SpriteFont>("arialHeading");
@@ -135,7 +137,7 @@ namespace Stellar_Invaders
 
             scrollingBackground.Update(gameTime);
 
-            switch (_gameState)
+            switch (gameState)
             {
                 case GameState.MainMenu:
                     {
@@ -249,7 +251,7 @@ namespace Stellar_Invaders
                         else
                         {
                             laser_shot.Play();
-                            PlayerLaser laser = new PlayerLaser(texMainShipLaserAutoCannon, new Vector2(player.position.X + player.destOrigin.X, player.position.Y), new Vector2(0, -10));
+                            PlayerLaser laser = new PlayerLaser(texMainShipLaserProjectileBSG, new Vector2(player.position.X + player.destOrigin.X, player.position.Y), new Vector2(0, -10));
                             playerLasers.Add(laser);
                             playerShootTick = 0;
                         }
@@ -284,7 +286,7 @@ namespace Stellar_Invaders
                     {
                         if (player.body.boundingBox.Intersects(enemyLasers[i].body.boundingBox))
                         {
-                            sndExplode[randInt(0, sndExplode.Count - 1)].Play();
+                            sndExplode.Play();
                             Explosion explosion = new Explosion(texExplosion, new Vector2(player.position.X + player.destOrigin.X, player.position.Y + player.destOrigin.Y));
                             explosions.Add(explosion);
 
@@ -310,35 +312,35 @@ namespace Stellar_Invaders
                     {
                         if (player.body.boundingBox.Intersects(enemies[i].body.boundingBox))
                         {
-                            sndExplode[randInt(0, sndExplode.Count - 1)].Play();
+                            sndExplode.Play();
                             Explosion explosion = new Explosion(texExplosion, new Vector2(player.position.X + player.destOrigin.X, player.position.Y + player.destOrigin.Y));
                             explosions.Add(explosion);
 
                             player.setDead(true);
                         }
 
-                        if (enemies[i].GetType() == typeof(texNautolanShipScout))
+                        if (enemies[i].GetType() == typeof(BomberShip))
                         {
-                            texNautolanShipScout enemy = (texNautolanShipScout)enemies[i];
+                            BomberShip enemy = (BomberShip)enemies[i];
 
                             if (enemy.canShoot)
                             {
-                                EnemyLaser laser = new EnemyLaser(texEnemyLaser, new Vector2(enemy.position.X, enemy.position.Y), new Vector2(0, 5));
+                                EnemyLaser laser = new EnemyLaser(texMainShipLaserProjectileBSG, new Vector2(enemy.position.X, enemy.position.Y), new Vector2(0, 5));
                                 enemyLasers.Add(laser);
 
                                 enemy.resetCanShoot();
                             }
                         }
-                        if (enemies[i].GetType() == typeof(ChaserShip))
+                        if (enemies[i].GetType() == typeof(ScoutShip))
                         {
-                            ChaserShip enemy = (ChaserShip)enemies[i];
+                            ScoutShip enemy = (ScoutShip)enemies[i];
 
                             if (Vector2.Distance(enemies[i].position, player.position + player.destOrigin) < 320)
                             {
-                                enemy.SetState(ChaserShip.States.CHASE);
+                                enemy.SetState(ScoutShip.States.CHASE);
                             }
 
-                            if (enemy.GetState() == ChaserShip.States.CHASE)
+                            if (enemy.GetState() == ScoutShip.States.CHASE)
                             {
                                 Vector2 direction = (player.position + player.destOrigin) - enemy.position;
                                 direction.Normalize();
@@ -382,7 +384,7 @@ namespace Stellar_Invaders
                 {
                     if (playerLasers[i].body.boundingBox.Intersects(enemies[j].body.boundingBox))
                     {
-                        sndExplode[randInt(0, sndExplode.Count - 1)].Play();
+                        sndExplode.Play();
 
                         Explosion explosion = new Explosion(texExplosion, new Vector2(enemies[j].position.X, enemies[j].position.Y));
                         explosion.scale = enemies[j].scale;
@@ -417,17 +419,17 @@ else
 	if (randInt(0, 10) <= 3)
 	{
     	Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-    	enemy = new GunShip(texEnemies[0], spawnPos, new Vector2(0, randFloat(1, 3)));
+    	enemy = new ScoutShip(texNautolanShipScout, spawnPos, new Vector2(0, randFloat(1, 3)));
 	}
 	else if (randInt(0, 10) >= 5)
 	{
     	Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-    	enemy = new ChaserShip(texEnemies[1], spawnPos, new Vector2(0, randFloat(1, 3)));
+    	enemy = new BomberShip(texNautolanShipBomber, spawnPos, new Vector2(0, randFloat(1, 3)));
 	}
 	else
 	{
     	Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-    	enemy = new CarrierShip(texEnemies[2], spawnPos, new Vector2(0, randFloat(1, 3)));
+    	enemy = new DreadnoughtShip(texNautolanShipDreadnought, spawnPos, new Vector2(0, randFloat(1, 3)));
 	}
 
 	enemies.Add(enemy);
@@ -439,17 +441,64 @@ else
 
         private void UpdateGameOver(GameTime gameTime)
         {
+            if (restartButton.isActive)
+            {
+                MouseState mouseState = Mouse.GetState();
 
+                if (restartButton.boundingBox.Contains(mouseState.Position))
+                {
+                    if (mouseState.LeftButton == ButtonState.Pressed)
+                    {
+                        restartButton.SetDown(true);
+                        restartButton.SetHovered(false);
+                    }
+                    else
+                    {
+                        restartButton.SetDown(false);
+                        restartButton.SetHovered(true);
+                    }
+
+                    if (mouseState.LeftButton == ButtonState.Released && restartButton.lastIsDown)
+                    {
+                        changeGameState(GameState.Gameplay);
+                    }
+                }
+                else
+                {
+                    restartButton.SetDown(false);
+                    restartButton.SetHovered(false);
+                }
+
+                restartButton.lastIsDown = mouseState.LeftButton == ButtonState.Pressed ? true : false;
+            }
+            else
+            {
+                restartButton.isActive = true;
+            }
 
         }
         private void resetGameplay()
         {
-
+            if (player != null)
+            {
+                player.setDead(false);
+                player.position = new Vector2((int)(graphics.PreferredBackBufferWidth * 0.5), (int)(graphics.PreferredBackBufferHeight * 0.5));
+            }
         }
+
+        //Czyszczenie list obiektów, zmiana stanu gry 
 
         private void changeGameState(GameState gameState)
         {
+            playButton.isActive = false;
+            restartButton.isActive = false;
+            explosions.Clear();
+            enemies.Clear();
+            playerLasers.Clear();
+            enemyLasers.Clear();
+            resetGameplay();
 
+            gameState = gameState;
         }
 
         protected override void Draw(GameTime gameTime)
@@ -458,8 +507,10 @@ else
 
             // TODO: Add your drawing code here
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointWrap);
+            
+            scrollingBackground.Draw(spriteBatch);
 
-            switch (_gameState)
+            switch (gameState)
             {
                 case GameState.MainMenu:
                     {
@@ -511,20 +562,46 @@ else
 
         private void DrawMainMenu(SpriteBatch spriteBatch)
         {
+            string title = "SPACE SHOOTER";
+            spriteBatch.DrawString(fontArial, title, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (fontArial.MeasureString(title).X * 0.5f), graphics.PreferredBackBufferHeight * 0.2f), Color.White);
 
-
+            playButton.Draw(spriteBatch);
         }
 
         private void DrawGameplay(SpriteBatch spriteBatch)
         {
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                enemies[i].Draw(spriteBatch);
+            }
 
+            for (int i = 0; i < playerLasers.Count; i++)
+            {
+                playerLasers[i].Draw(spriteBatch);
+            }
 
+            for (int i = 0; i < enemyLasers.Count; i++)
+            {
+                enemyLasers[i].Draw(spriteBatch);
+            }
+
+            for (int i = 0; i < explosions.Count; i++)
+            {
+                explosions[i].Draw(spriteBatch);
+            }
+
+            if (player != null)
+            {
+                player.Draw(spriteBatch);
+            }
         }
 
         private void DrawGameOver(SpriteBatch spriteBatch)
         {
+            string title = "GAME OVER";
+            spriteBatch.DrawString(fontArial, title, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (fontArial.MeasureString(title).X * 0.5f), graphics.PreferredBackBufferHeight * 0.2f), Color.White);
 
-
+            restartButton.Draw(spriteBatch);
         }
 
 
