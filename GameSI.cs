@@ -12,9 +12,11 @@ namespace Stellar_Invaders
     {
         //Sciezka do plikow
         public string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Content\\bin\\Assets";
+
         // Przygotowanie obiektow 
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
+
         // Lista zawierajaca textury tła (background)
         private List<Texture2D> texBgs = new List<Texture2D>();
         // Obiekty zawierajacy tekstury
@@ -50,33 +52,51 @@ namespace Stellar_Invaders
         /// <summary>
         /// Przetrzymuje status gry
         /// </summary>
-        private GameState gameState;
-        public static int randInt(int minNumber, int maxNumber)
-        {
-            return new Random().Next(minNumber, maxNumber);
-        }
+        private GameState _gameState;
+        //Poruszanie się i definicja przycisków start i restart
+        private KeyboardState keyState = Keyboard.GetState();
 
-        public static float randFloat(float minNumber, float maxNumber)
-        {
-            return (float)new Random().NextDouble() * (maxNumber - minNumber) + minNumber;
-        }
+        private MenuButton playButton;
+        private MenuButton restartButton;
+
+        //Liczenie eksplozji, wrogów, laserów
+        private List<Explosion> explosions = new List<Explosion>();
+        private List<Enemy> enemies = new List<Enemy>();
+        private List<EnemyLaser> enemyLasers = new List<EnemyLaser>();
+        private List<PlayerLaser> playerLasers = new List<PlayerLaser>();
+        private Player player = null;
+        private ScrollingBackground scrollingBackground;
+
+        //Timer, po tym jak gracz zostanie zniszczony 
+        private int restartDelay = 60 * 2;
+        private int restartTick = 0;
+
+        //Czas pojawiania się wroga
+        private int spawnEnemyDelay = 60;
+        private int spawnEnemyTick = 0;
+
+        //Odstęp pomiędzy pociskami, które wystrzeliwuje gracz 
+        private int playerShootDelay = 15;
+        private int playerShootTick = 0;
+
 
         public GameSI()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = true;
         }
 
 
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            IsMouseVisible = true;
+
             graphics.PreferredBackBufferWidth = 480;
             graphics.PreferredBackBufferHeight = 640;
             graphics.ApplyChanges();
 
-            IsMouseVisible = true;
             base.Initialize();
         }
 
@@ -119,8 +139,11 @@ namespace Stellar_Invaders
 
             // Load sprite fonts
             fontArial = Content.Load<SpriteFont>("arialHeading");
+
             scrollingBackground = new ScrollingBackground(texBgs);
-            playButton = new MenuButton(this, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (int)(texBtnPlay.Width * 0.5), graphics.PreferredBackBufferHeight * 0.5f), texBtnPlay, texBtnPlayDown, texBtnPlayHover); restartButton = new MenuButton(this, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (int)(texBtnPlay.Width * 0.5), graphics.PreferredBackBufferHeight * 0.5f), texBtnRestart, texBtnRestartDown, texBtnRestartHover);
+
+            playButton = new MenuButton(this, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (int)(texBtnPlay.Width * 0.5), graphics.PreferredBackBufferHeight * 0.5f), texBtnPlay, texBtnPlayDown, texBtnPlayHover);
+            restartButton = new MenuButton(this, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (int)(texBtnPlay.Width * 0.5), graphics.PreferredBackBufferHeight * 0.5f), texBtnRestart, texBtnRestartDown, texBtnRestartHover);
 
             changeGameState(GameState.MainMenu);
         }
@@ -136,7 +159,7 @@ namespace Stellar_Invaders
 
             scrollingBackground.Update(gameTime);
 
-            switch (gameState)
+            switch (_gameState)
             {
                 case GameState.MainMenu:
                     {
@@ -262,7 +285,7 @@ namespace Stellar_Invaders
                 player.position.X = MathHelper.Clamp(player.position.X, 0, graphics.PreferredBackBufferWidth - player.body.boundingBox.Width);
                 player.position.Y = MathHelper.Clamp(player.position.Y, 0, graphics.PreferredBackBufferHeight - player.body.boundingBox.Height);
             }
-
+            //
 
             for (int i = 0; i < playerLasers.Count; i++)
             {
@@ -375,7 +398,7 @@ namespace Stellar_Invaders
                     explosions.Remove(explosions[i]);
                 }
             }
-
+            //
             for (int i = 0; i < playerLasers.Count; i++)
             {
                 bool shouldDestroyLaser = false;
@@ -407,34 +430,34 @@ namespace Stellar_Invaders
 
 
             // Enemy spawning
-if (spawnEnemyTick < spawnEnemyDelay)
-{
-	spawnEnemyTick++;
-}
-else
-{
-	Enemy enemy = null;
-           	 
-	if (randInt(0, 10) <= 3)
-	{
-    	Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-    	enemy = new ScoutShip(texNautolanShipScout, spawnPos, new Vector2(0, randFloat(1, 3)));
-	}
-	else if (randInt(0, 10) >= 5)
-	{
-    	Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-    	enemy = new BomberShip(texNautolanShipBomber, spawnPos, new Vector2(0, randFloat(1, 3)));
-	}
-	else
-	{
-    	Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
-    	enemy = new DreadnoughtShip(texNautolanShipDreadnought, spawnPos, new Vector2(0, randFloat(1, 3)));
-	}
+            if (spawnEnemyTick < spawnEnemyDelay)
+            {
+                spawnEnemyTick++;
+            }
+            else
+            {
+                Enemy enemy = null;
 
-	enemies.Add(enemy);
+                if (randInt(0, 10) <= 3)
+                {
+                    Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
+                    enemy = new ScoutShip(texNautolanShipScout, spawnPos, new Vector2(0, randFloat(1, 3)));
+                }
+                else if (randInt(0, 10) >= 5)
+                {
+                    Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
+                    enemy = new BomberShip(texNautolanShipBomber, spawnPos, new Vector2(0, randFloat(1, 3)));
+                }
+                else
+                {
+                    Vector2 spawnPos = new Vector2(randFloat(0, graphics.PreferredBackBufferWidth), -128);
+                    enemy = new DreadnoughtShip(texNautolanShipDreadnought, spawnPos, new Vector2(0, randFloat(1, 3)));
+                }
 
-	spawnEnemyTick = 0;
-}
+                enemies.Add(enemy);
+
+                spawnEnemyTick = 0;
+            }
 
         }
 
@@ -497,7 +520,7 @@ else
             enemyLasers.Clear();
             resetGameplay();
 
-            gameState = gameState;
+            _gameState = gameState;
         }
 
         protected override void Draw(GameTime gameTime)
@@ -506,10 +529,10 @@ else
 
             // TODO: Add your drawing code here
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointWrap);
-            
+
             scrollingBackground.Draw(spriteBatch);
 
-            switch (gameState)
+            switch (_gameState)
             {
                 case GameState.MainMenu:
                     {
@@ -534,30 +557,6 @@ else
 
             base.Draw(gameTime);
         }
-        //Poruszanie się i definicja przycisków start i restart
-        private KeyboardState keyState = Keyboard.GetState();
-        private MenuButton playButton;
-        private MenuButton restartButton;
-
-        //Liczenie eksplozji, wrogów, laserów
-        private List<Explosion> explosions = new List<Explosion>();
-        private List<Enemy> enemies = new List<Enemy>();
-        private List<EnemyLaser> enemyLasers = new List<EnemyLaser>();
-        private List<PlayerLaser> playerLasers = new List<PlayerLaser>();
-        private Player player = null;
-        private ScrollingBackground scrollingBackground;
-
-        //Timer, po tym jak gracz zostanie zniszczony 
-        private int restartDelay = 60 * 2;
-        private int restartTick = 0;
-
-        //Czas pojawiania się wroga
-        private int spawnEnemyDelay = 60;
-        private int spawnEnemyTick = 0;
-
-        //Odstęp pomiędzy pociskami, które wystrzeliwuje gracz 
-        private int playerShootDelay = 15;
-        private int playerShootTick = 0;
 
         private void DrawMainMenu(SpriteBatch spriteBatch)
         {
@@ -602,7 +601,15 @@ else
 
             restartButton.Draw(spriteBatch);
         }
+        public static int randInt(int minNumber, int maxNumber)
+        {
+            return new Random().Next(minNumber, maxNumber);
+        }
 
+        public static float randFloat(float minNumber, float maxNumber)
+        {
+            return (float)new Random().NextDouble() * (maxNumber - minNumber) + minNumber;
+        }
 
     }
 }
