@@ -15,7 +15,7 @@ namespace Stellar_Invaders
         public bool canShoot = false;
         public BomberShip(Texture2D texture, Vector2 position, Vector2 velocity) : base(texture, position, velocity)
         {
-
+            
         }
         public override void Update(GameTime gameTime)
         {

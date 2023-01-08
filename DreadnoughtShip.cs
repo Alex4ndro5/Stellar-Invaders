@@ -12,7 +12,7 @@ namespace Stellar_Invaders
     {
         public DreadnoughtShip(Texture2D texture, Vector2 position, Vector2 velocity) : base(texture, position, velocity)
         {
-
+            sprite = new AnimatedSprite(this.texture, 128, 128, 10);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Stellar_Invaders
         public Player(Texture2D texture, Vector2 position) : base()
         {
             this.texture = texture;
-            sprite = new AnimatedSprite(this.texture, 16, 16, 10);
+            sprite = new AnimatedSprite(this.texture, 48, 48, 10);
             this.position = position;
             sourceOrigin = new Vector2(sprite.frameWidth * 0.5f, sprite.frameHeight * 0.5f);
             destOrigin = new Vector2((sprite.frameWidth * 0.5f) * scale.X, (sprite.frameHeight * 0.5f) * scale.Y);

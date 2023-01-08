@@ -16,7 +16,7 @@ namespace Stellar_Invaders
         public Enemy(Texture2D texture, Vector2 position, Vector2 velocity) : base()
         {
             this.texture = texture;
-            sprite = new AnimatedSprite(this.texture, 16, 16, 10);
+            sprite = new AnimatedSprite(this.texture, 64, 64, 10);
             scale = new Vector2(GameSI.RandFloat(10, 20) * 0.1f);
             sourceOrigin = new Vector2(sprite.frameWidth * 0.5f, sprite.frameHeight * 0.5f);
             destOrigin = new Vector2((sprite.frameWidth * 0.5f) * scale.X, (sprite.frameHeight * 0.5f) * scale.Y);
