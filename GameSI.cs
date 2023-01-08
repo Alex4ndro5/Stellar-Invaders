@@ -561,7 +561,7 @@ else
 
         private void DrawMainMenu(SpriteBatch spriteBatch)
         {
-            string title = "SPACE SHOOTER";
+            string title = "STELLAR INVADERS";
             spriteBatch.DrawString(fontArial, title, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (fontArial.MeasureString(title).X * 0.5f), graphics.PreferredBackBufferHeight * 0.2f), Color.White);
 
             playButton.Draw(spriteBatch);
