@@ -108,6 +108,8 @@
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/SpaceMusicPack/menu.wav</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/SpaceMusicPack/scream.wav</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/SpaceMusicPack/slow_travel.wav</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/SpaceMusicPack/sndBtnDown.wav</File>
+    <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/SpaceMusicPack/sndBtnOver.wav</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/SpaceMusicPack/start_level.wav</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Weapons/NautolanBomb.png</File>
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Weapons/NautolanBullet.png</File>
@@ -127,6 +129,8 @@
     <File>C:/Users/alekf/Desktop/Singularity/AGH/Semestr_3/WZ/PO/Stellar Invaders/Content/Assets/Weapons/PickupIconWeaponsZapper.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

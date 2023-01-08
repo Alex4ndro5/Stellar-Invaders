@@ -22,6 +22,15 @@ namespace Stellar_Invaders
         private Texture2D texNautolanShipBomber;
         private Texture2D texNautolanShipDreadnought;
         private Texture2D texMainShip;
+        private Texture2D texBtnPlay;
+        private Texture2D texBtnPlayDown;
+        private Texture2D texBtnPlayHover;
+        private Texture2D texBtnRestart;
+        private Texture2D texBtnRestartDown;
+        private Texture2D texBtnRestartHover;
+
+        public SoundEffect sndBtnDown;
+        public SoundEffect sndBtnOver;
         // Obiekt zawierajacy wystrzal laseru
         public SoundEffect laser_shot;
         // Obiekt zawierajacy czcionke
@@ -80,6 +89,19 @@ namespace Stellar_Invaders
             texNautolanShipScout = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipScoutBase");
             texNautolanShipBomber = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipBomberBase");
             texNautolanShipDreadnought = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipDreadnoughtBase");
+            //Tekstu do przyciskow
+            texBtnPlay = Content.Load<Texture2D>(path + "\\GUI\\sprBtnPlay");
+            texBtnPlayDown = Content.Load<Texture2D>(path + "\\GUI\\sprBtnPlayDown");
+            texBtnPlayHover = Content.Load<Texture2D>(path + "\\GUI\\sprBtnPlayHover");
+
+            texBtnRestart = Content.Load<Texture2D>(path + "\\GUI\\sprBtnRestart");
+            texBtnRestartDown = Content.Load<Texture2D>(path + "\\GUI\\sprBtnRestartDown");
+            texBtnRestartHover = Content.Load<Texture2D>(path + "\\GUI\\sprBtnRestartHover");
+            // Load sounds
+            sndBtnDown = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\sndBtnDown");
+            sndBtnOver = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\sndBtnOver");
+
+
 
             // Load sprite fonts
             fontArial = Content.Load<SpriteFont>("arialHeading");
@@ -188,7 +210,7 @@ namespace Stellar_Invaders
         private List<PlayerLaser> playerLasers = new List<PlayerLaser>();
         private Player player = null;
         private ScrollingBackground scrollingBackground;
-       
+
         //Timer, po tym jak gracz zostanie zniszczony 
         private int restartDelay = 60 * 2;
         private int restartTick = 0;

@@ -1202,6 +1202,18 @@
 /processorParam:Quality=Best
 /build:Assets/SpaceMusicPack/slow_travel.wav
 
+#begin Assets/SpaceMusicPack/sndBtnDown.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Assets/SpaceMusicPack/sndBtnDown.wav
+
+#begin Assets/SpaceMusicPack/sndBtnOver.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Assets/SpaceMusicPack/sndBtnOver.wav
+
 #begin Assets/SpaceMusicPack/start_level.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
