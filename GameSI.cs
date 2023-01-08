@@ -13,7 +13,7 @@ namespace Stellar_Invaders
         //Sciezka do plikow
         public string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Content\\bin\\Assets";
         // Przygotowanie obiektow 
-        private GraphicsDeviceManager _graphics;
+        private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
         // Lista zawierajaca textury tła (background)
         private List<Texture2D> texBgs = new List<Texture2D>();
@@ -51,15 +51,21 @@ namespace Stellar_Invaders
 
         public GameSI()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
 
+
+
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            graphics.PreferredBackBufferWidth = 480;
+            graphics.PreferredBackBufferHeight = 640;
+            graphics.ApplyChanges();
 
+            IsMouseVisible = true;
             base.Initialize();
         }
 
@@ -77,7 +83,10 @@ namespace Stellar_Invaders
 
             // Load sprite fonts
             fontArial = Content.Load<SpriteFont>("arialHeading");
+            scrollingBackground = new ScrollingBackground(texBgs);
+            playButton = new MenuButton(this, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (int)(texBtnPlay.Width * 0.5), graphics.PreferredBackBufferHeight * 0.5f), texBtnPlay, texBtnPlayDown, texBtnPlayHover); restartButton = new MenuButton(this, new Vector2(graphics.PreferredBackBufferWidth * 0.5f - (int)(texBtnPlay.Width * 0.5), graphics.PreferredBackBufferHeight * 0.5f), texBtnRestart, texBtnRestartDown, texBtnRestartHover);
 
+            changeGameState(GameState.MainMenu);
         }
 
         protected override void Update(GameTime gameTime)
@@ -167,6 +176,31 @@ namespace Stellar_Invaders
 
             base.Draw(gameTime);
         }
+        //Poruszanie się i definicja przycisków start i restart
+        private KeyboardState keyState = Keyboard.GetState();
+        private MenuButton playButton;
+        private MenuButton restartButton;
+
+        //Liczenie eksplozji, wrogów, laserów
+        private List<Explosion> explosions = new List<Explosion>();
+        private List<Enemy> enemies = new List<Enemy>();
+        private List<EnemyLaser> enemyLasers = new List<EnemyLaser>();
+        private List<PlayerLaser> playerLasers = new List<PlayerLaser>();
+        private Player player = null;
+        private ScrollingBackground scrollingBackground;
+       
+        //Timer, po tym jak gracz zostanie zniszczony 
+        private int restartDelay = 60 * 2;
+        private int restartTick = 0;
+
+        //Czas pojawiania się wroga
+        private int spawnEnemyDelay = 60;
+        private int spawnEnemyTick = 0;
+
+        //Odstęp pomiędzy pociskami, które wystrzeliwuje gracz 
+        private int playerShootDelay = 15;
+        private int playerShootTick = 0;
+
         private void DrawMainMenu(SpriteBatch spriteBatch)
         {
 
@@ -184,5 +218,7 @@ namespace Stellar_Invaders
 
 
         }
+
+
     }
 }
