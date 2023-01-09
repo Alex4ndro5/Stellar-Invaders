@@ -135,7 +135,7 @@ namespace Stellar_Invaders
             sndBtnDown = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\sndBtnDown");
             sndBtnOver = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\sndBtnOver");
             laser_shot = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\laser_shot");
-            sndExplode = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\scream");
+            sndExplode = Content.Load<SoundEffect>(path + "\\SpaceMusicPack\\explosion");
 
             // Load sprite fonts
             fontArial = Content.Load<SpriteFont>("arialHeading");

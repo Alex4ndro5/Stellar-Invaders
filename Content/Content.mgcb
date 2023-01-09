@@ -1154,6 +1154,12 @@
 /processorParam:Quality=Best
 /build:Assets/SpaceMusicPack/battle.wav
 
+#begin Assets/SpaceMusicPack/explosion.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Assets/SpaceMusicPack/explosion.wav
+
 #begin Assets/SpaceMusicPack/in_the_wreckage.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
