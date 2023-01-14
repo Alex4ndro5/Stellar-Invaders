@@ -32,6 +32,7 @@ namespace Stellar_Invaders
         private Texture2D texBtnRestartDown;
         private Texture2D texBtnRestartHover;
         private Texture2D texExplosion;
+        private Texture2D texMainShipLaserProjectileZapper;
 
         public SoundEffect sndBtnDown;
         public SoundEffect sndBtnOver;
@@ -121,6 +122,7 @@ namespace Stellar_Invaders
 
             //Wczytywanie laserów
             texMainShipLaserProjectileBSG = Content.Load<Texture2D>(path + "\\MainShip\\MainshipweaponProjectileBigSpaceGun");
+            texMainShipLaserProjectileZapper = Content.Load<Texture2D>(path + "\\MainShip\\MainshipweaponProjectileAutocannonbullet");
 
             //Tekstu do przyciskow
             texBtnPlay = Content.Load<Texture2D>(path + "\\GUI\\sprBtnPlay");
@@ -347,7 +349,7 @@ namespace Stellar_Invaders
 
                             if (enemy.canShoot)
                             {
-                                EnemyLaser laser = new(texMainShipLaserProjectileBSG, new Vector2(enemy.position.X, enemy.position.Y), new Vector2(0, 5));
+                                EnemyLaser laser = new(texMainShipLaserProjectileZapper, new Vector2(enemy.position.X, enemy.position.Y), new Vector2(0, 5));
                                 enemyLasers.Add(laser);
 
                                 enemy.resetCanShoot();

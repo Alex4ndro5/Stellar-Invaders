@@ -20,6 +20,7 @@ namespace Stellar_Invaders
             sprite = new AnimatedSprite(this.texture, 32, 32, 10);
             this.position = position;
             body.velocity = velocity;
+            angle = 180;
 
             setupBoundingBox(sprite.frameWidth, sprite.frameHeight);
         }
