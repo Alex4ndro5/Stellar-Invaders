@@ -22,6 +22,7 @@ namespace Stellar_Invaders
             destOrigin = new Vector2((sprite.frameWidth * 0.5f) * scale.X, (sprite.frameHeight * 0.5f) * scale.Y);
             this.position = position;
             body.velocity = velocity;
+            angle= 180;
 
             setupBoundingBox(sprite.frameWidth, sprite.frameHeight);
         }

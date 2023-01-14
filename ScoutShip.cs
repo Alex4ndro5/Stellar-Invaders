@@ -29,7 +29,7 @@ namespace Stellar_Invaders
         }
         public ScoutShip(Texture2D texture, Vector2 position, Vector2 velocity) : base(texture, position, velocity)
         {
-            angle = 0;
+            angle = 180;
         }
         public override void Update(GameTime gameTime)
         {
