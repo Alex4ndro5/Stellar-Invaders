@@ -108,7 +108,7 @@ namespace Stellar_Invaders
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+          
 
             IsMouseVisible = true;
 
@@ -125,7 +125,7 @@ namespace Stellar_Invaders
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+           
 
             //Wczytywanie teł
             for (int i = 1; i < 3; i++)
@@ -173,12 +173,17 @@ namespace Stellar_Invaders
             ChangeGameState(GameState.MainMenu);
         }
 
+        /// <summary>
+        /// //
+        /// </summary>
+        /// <param name="gameTime"></param>
+
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+            
 
             keyState = Keyboard.GetState();
 
@@ -247,8 +252,10 @@ namespace Stellar_Invaders
             }
 
         }
-
-        //Określanie restart timera, ruchów po planszy, zakresu ruchu, 
+        /// <summary>
+        ///Określanie restart timera, ruchów po planszy (WSAD), zakresu ruchu 
+        /// </summary>
+        
         private void UpdateGameplay(GameTime gameTime)
         {
             if (player == null)
@@ -310,7 +317,7 @@ namespace Stellar_Invaders
                 player.position.X = MathHelper.Clamp(player.position.X, 0, graphics.PreferredBackBufferWidth - player.body.boundingBox.Width);
                 player.position.Y = MathHelper.Clamp(player.position.Y, 0, graphics.PreferredBackBufferHeight - player.body.boundingBox.Height);
             }
-            //
+            
 
             for (int i = 0; i < playerLasers.Count; i++)
             {
@@ -423,7 +430,7 @@ namespace Stellar_Invaders
                     explosions.Remove(explosions[i]);
                 }
             }
-            //
+            
             for (int i = 0; i < playerLasers.Count; i++)
             {
                 bool shouldDestroyLaser = false;
@@ -456,7 +463,7 @@ namespace Stellar_Invaders
             }
 
 
-            // Enemy spawning
+            //Spawning wroga
             if (spawnEnemyTick < spawnEnemyDelay)
             {
                 spawnEnemyTick++;
@@ -487,7 +494,10 @@ namespace Stellar_Invaders
             }
 
         }
-
+        /// <summary>
+        /// Ustanawianie przycisku Restart 
+        /// </summary>
+        
         private void UpdateGameOver(GameTime gameTime)
         {
             if (restartButton.isActive)
