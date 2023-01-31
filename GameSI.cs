@@ -658,7 +658,7 @@ namespace Stellar_Invaders
         }
 
         /// <summary>
-        /// Funkcja generująca pseudolosowe liczby 
+        /// Funkcja generująca pseudolosowe inty 
         /// </summary>
         /// <param name="minNumber">min</param>
         /// <param name="maxNumber">max</param>
