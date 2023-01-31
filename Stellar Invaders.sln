@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stellar Invaders", "Stellar Invaders.csproj", "{7638F31A-14EE-4360-865D-E618C2B3F05F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stellar Invaders", "Stellar Invaders.csproj", "{7638F31A-14EE-4360-865D-E618C2B3F05F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Game_SI", "..\Test_Game_SI\Test_Game_SI.csproj", "{EC3E748F-C350-45EB-8796-7960C6ACB1E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7638F31A-14EE-4360-865D-E618C2B3F05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7638F31A-14EE-4360-865D-E618C2B3F05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7638F31A-14EE-4360-865D-E618C2B3F05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3E748F-C350-45EB-8796-7960C6ACB1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3E748F-C350-45EB-8796-7960C6ACB1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3E748F-C350-45EB-8796-7960C6ACB1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3E748F-C350-45EB-8796-7960C6ACB1E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
