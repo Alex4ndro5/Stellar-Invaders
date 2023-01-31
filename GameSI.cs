@@ -494,9 +494,12 @@ namespace Stellar_Invaders
             }
 
         }
+        
         /// <summary>
-        /// Ustanawianie przycisku Restart 
+        /// Określanie  przycisku RESTART
         /// </summary>
+        /// <param name="gameTime">Przechowuje czas gry</param>
+        
         
         private void UpdateGameOver(GameTime gameTime)
         {
@@ -570,7 +573,7 @@ namespace Stellar_Invaders
         {
             GraphicsDevice.Clear(Color.Black);
 
-            // TODO: Add your drawing code here
+           
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointWrap);
 
             scrollingBackground.Draw(spriteBatch);
@@ -600,7 +603,10 @@ namespace Stellar_Invaders
 
             base.Draw(gameTime);
         }
-
+        /// <summary>
+        /// Inicjowanie menu startowego 
+        /// </summary>
+        
         private void DrawMainMenu(SpriteBatch spriteBatch)
         {
             string title = "STELLAR INVADERS";
@@ -608,7 +614,10 @@ namespace Stellar_Invaders
 
             playButton.Draw(spriteBatch);
         }
-
+        /// <summary>
+        /// Lista obiektów
+        /// </summary>
+        
         private void DrawGameplay(SpriteBatch spriteBatch)
         {
             for (int i = 0; i < enemies.Count; i++)
@@ -636,7 +645,10 @@ namespace Stellar_Invaders
                 player.Draw(spriteBatch);
             }
         }
-
+        /// <summary>
+        /// Scena ostatnia "GAME OVER"
+        /// </summary>
+        
         private void DrawGameOver(SpriteBatch spriteBatch)
         {
             string title = "GAME OVER";
@@ -644,10 +656,25 @@ namespace Stellar_Invaders
 
             restartButton.Draw(spriteBatch);
         }
+
+        /// <summary>
+        /// Funkcja generująca pseudolosowe liczby 
+        /// </summary>
+        /// <param name="minNumber">min</param>
+        /// <param name="maxNumber">max</param>
+        /// <returns></returns>
+
         public static int RandInt(int minNumber, int maxNumber)
         {
             return new Random().Next(minNumber, maxNumber);
         }
+
+        /// <summary>
+        /// Funkcja generarująca floaty 
+        /// </summary>
+        /// <param name="minNumber">min </param>
+        /// <param name="maxNumber">max</param>
+        /// <returns></returns>
 
         public static float RandFloat(float minNumber, float maxNumber)
         {
