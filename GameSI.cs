@@ -8,21 +8,31 @@ using System.IO;
 
 namespace Stellar_Invaders
 {
+    /// <summary>
+    /// Klasa główna zawierająca inicializacje gry 
+    /// </summary>
     public class GameSI : Game
     {
-        //Sciezka do plikow
+        /// <summary>
+        /// Sciezka do plikow
+        /// </summary>
         public string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Content\\bin\\Assets";
 
         // Przygotowanie obiektow 
         private readonly GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
 
-        // Lista zawierajaca textury tła (background)
+        /// <summary>
+        /// Lista zawierajaca textury tła (background)
+        /// </summary>
         private List<Texture2D> texBgs = new();
         // Obiekty zawierajacy tekstury
         private Texture2D texNautolanShipScout;
+        private Texture2D texScoutExplosion;
         private Texture2D texNautolanShipBomber;
+        private Texture2D texBomberExplosion;
         private Texture2D texNautolanShipDreadnought;
+        private Texture2D texDreadnoughtExplosion;
         private Texture2D texMainShip;
         private Texture2D texMainShipLaserProjectileBSG;
         private Texture2D texBtnPlay;
@@ -34,12 +44,15 @@ namespace Stellar_Invaders
         private Texture2D texExplosion;
         private Texture2D texMainShipLaserProjectileZapper;
 
+        //Obiekty zawierajace dzwieki przyciskow
         public SoundEffect sndBtnDown;
         public SoundEffect sndBtnOver;
         // Obiekt zawierajacy wystrzal laseru
         public SoundEffect laser_shot;
         public SoundEffect sndExplode;
-        // Obiekt zawierajacy czcionke
+        /// <summary>
+        /// Obiekt zawierajacy czcionke Arial
+        /// </summary>
         private SpriteFont fontArial;
         /// <summary>
         /// Enumerat statusu gry: 0 - Menu, 1 - Gameplay, 2 - Gameover
@@ -55,6 +68,9 @@ namespace Stellar_Invaders
         /// </summary>
         private GameState _gameState;
         //Poruszanie się i definicja przycisków start i restart
+        /// <summary>
+        /// Pobiera stan wcisnietego klawisza
+        /// </summary>
         private KeyboardState keyState = Keyboard.GetState();
 
         private MenuButton playButton;
@@ -87,7 +103,9 @@ namespace Stellar_Invaders
             Content.RootDirectory = "Content";
         }
 
-
+        /// <summary>
+        /// Metoda inicjujaca gre
+        /// </summary>
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
@@ -100,7 +118,9 @@ namespace Stellar_Invaders
 
             base.Initialize();
         }
-
+        /// <summary>
+        /// Metoda w której wczytywane są assety do obiektów
+        /// </summary>
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -119,12 +139,15 @@ namespace Stellar_Invaders
             texNautolanShipBomber = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipBomberBase");
             texNautolanShipDreadnought = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipDreadnoughtBase");
             texExplosion = Content.Load<Texture2D>(path + "\\Enemies\\AsteroidFlame");
+            texScoutExplosion = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipScout");
+            texBomberExplosion = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipBomber");
+            texDreadnoughtExplosion = Content.Load<Texture2D>(path + "\\Enemies\\NautolanShipDreadnought");
 
             //Wczytywanie laserów
             texMainShipLaserProjectileBSG = Content.Load<Texture2D>(path + "\\MainShip\\MainshipweaponProjectileBigSpaceGun");
             texMainShipLaserProjectileZapper = Content.Load<Texture2D>(path + "\\MainShip\\MainshipweaponProjectileAutocannonbullet");
 
-            //Tekstu do przyciskow
+            //Tekstury do przyciskow
             texBtnPlay = Content.Load<Texture2D>(path + "\\GUI\\sprBtnPlay");
             texBtnPlayDown = Content.Load<Texture2D>(path + "\\GUI\\sprBtnPlayDown");
             texBtnPlayHover = Content.Load<Texture2D>(path + "\\GUI\\sprBtnPlayHover");
@@ -444,7 +467,7 @@ namespace Stellar_Invaders
 
                 if (RandInt(0, 10) <= 3)
                 {
-                    Vector2 spawnPos = new (RandFloat(0, graphics.PreferredBackBufferWidth), -128);
+                    Vector2 spawnPos = new(RandFloat(0, graphics.PreferredBackBufferWidth), -128);
                     enemy = new ScoutShip(texNautolanShipScout, spawnPos, new Vector2(0, RandFloat(1, 3)));
                 }
                 else if (RandInt(0, 10) >= 5)
@@ -512,7 +535,10 @@ namespace Stellar_Invaders
             }
         }
 
-        //Czyszczenie list obiektów, zmiana stanu gry 
+        /// <summary>
+        /// Czyszczenie list obiektów, zmiana stanu gry 
+        /// </summary>
+        /// <param name="gameState">Przechowywuje status gry</param>
 
         private void ChangeGameState(GameState gameState)
         {
@@ -526,7 +552,10 @@ namespace Stellar_Invaders
 
             _gameState = gameState;
         }
-
+        /// <summary>
+        /// Metoda rysujacąca obiekty
+        /// </summary>
+        /// <param name="gameTime"></param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);

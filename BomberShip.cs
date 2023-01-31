@@ -10,7 +10,7 @@ namespace Stellar_Invaders
 {
     internal class BomberShip : Enemy
     {
-        private int shootDelay = 60;
+        private int shootDelay = 90;
         private int shootTick = 0;
         public bool canShoot = false;
         public BomberShip(Texture2D texture, Vector2 position, Vector2 velocity) : base(texture, position, velocity)
