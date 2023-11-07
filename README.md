@@ -57,7 +57,7 @@ We welcome contributions! If you'd like to contribute to Stellar-Invaders, pleas
 
 ## License
 
-Stellar-Invaders is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for more details.
+Stellar-Invaders is not licensed.
 
 ---
 
